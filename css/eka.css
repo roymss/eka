@@ -1,0 +1,308 @@
+/* My Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Signika:wght@300..700&display=swap");
+
+@font-face {
+  font-family: "Gang Of Three";
+  src: url(../fontface/go3v2.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* My Root */
+
+:root {
+  --bebas: "Bebas Neue", sans-serif;
+  --signika: "Signika", sans-serif;
+  --got: "Gang Of Three";
+  --clr: #ee322a;
+  --clr2: #cf2e2e;
+  --rgba--hover: rgba(238, 50, 42, 0.8);
+}
+
+/* My Styles */
+
+.nav-item {
+  font-family: var(--signika);
+  font-weight: bold;
+}
+
+/* Carousel */
+
+.main-page {
+  width: 95%;
+  height: 70vh;
+  background-image: url(../assets/img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.title {
+  font-family: var(--got);
+  font-size: 8rem;
+}
+
+.title2 {
+  font-family: var(--signika);
+  font-size: 2rem;
+}
+
+/* Card */
+
+.card-2 {
+  width: 95%;
+  height: 50vh;
+}
+
+.story,
+.menu,
+.interior,
+.order {
+  width: 23%;
+  height: 100%;
+  color: #f5f5f5;
+}
+
+.story {
+  background-image: url(../assets/img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.menu {
+  background-image: url(../assets/img/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.interior {
+  background-image: url(../assets/img/bg3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.order {
+  background-image: url(../assets/img/cook.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.title3 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title3:hover {
+  background-color: var(--rgba--hover);
+}
+
+/* Popular */
+
+.popular {
+  margin-top: 10rem;
+}
+
+.popular .container .popular-2 {
+  margin-top: 6rem;
+}
+
+.title4 {
+  font-family: var(--got);
+  font-size: 5rem;
+}
+
+.title5 {
+  font-family: var(--signika);
+  font-size: 2.6rem;
+}
+
+.card-title {
+  font-family: var(--signika);
+  font-size: 2rem;
+}
+
+.card-text {
+  font-size: 0.7rem;
+}
+
+.row .card .btn-danger {
+  background-color: var(--clr2);
+  font-family: var(--signika);
+  border: none;
+}
+
+.row .card .btn-danger:hover {
+  background-color: #222;
+  border: none;
+}
+
+/* Kitchen */
+
+.kitchen {
+  width: 95%;
+  height: 75vh;
+  margin-top: 10rem;
+  background-image: url(../assets/img/bg3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.title-kitchen {
+  font-size: 8rem;
+  font-family: var(--got);
+  color: #f5f5f5;
+}
+
+.title-kitchen-2 {
+  font-size: 2rem;
+  color: #f5f5f5;
+  font-family: var(--signika);
+}
+
+.kitchen button {
+  background-color: var(--clr2);
+  font-family: var(--signika);
+  border: none;
+  border-radius: 0%;
+  padding: 0.8rem;
+}
+
+/* Maps */
+
+.maps {
+  margin-top: 10rem;
+}
+
+iframe {
+  margin-top: 7rem;
+  width: 100%;
+}
+
+.maps h2 {
+  font-size: 8rem;
+  color: #222;
+  font-family: var(--got);
+}
+
+.maps h4 {
+  font-size: 2rem;
+  color: #222;
+  font-family: var(--signika);
+}
+
+/* News */
+
+.news {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  width: 95%;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.news h2 {
+  font-size: 8rem;
+  color: #222;
+  font-family: var(--got);
+}
+
+.news h4 {
+  font-size: 2rem;
+  color: #222;
+  font-family: var(--signika);
+}
+
+.myform-2 {
+  padding: 1rem 2rem;
+  font-family: var(--signika);
+  outline: none;
+  border: none;
+  background: #222;
+  color: #f5f5f5;
+}
+
+.btn-btn {
+  padding: 1rem 2rem;
+  font-family: var(--signika);
+  outline: none;
+  border: none;
+  background-color: var(--clr);
+  color: #f5f5f5;
+}
+
+.btn-btn:hover {
+  background-color: #222;
+}
+
+/* Footer */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-container > div {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-contact h3 {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-about p,
+.footer-contact p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #fff;
+  margin-top: 20px;
+}
