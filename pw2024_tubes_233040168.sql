@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 07, 2024 at 01:59 AM
+-- Generation Time: Jun 09, 2024 at 01:43 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -39,8 +39,9 @@ CREATE TABLE `produk` (
 --
 
 INSERT INTO `produk` (`id`, `gambar`, `nama`, `desk`) VALUES
-(1, 'produk.jpg', 'Dragon Roll: Shrimp Tempura with Eelasasdad', 'Maecenas, eget porttitor, leo sed, euismod, congue, nibh quis, scelerisque.asdasd'),
-(3, 'bg2.jpg', 'zzzzzz', 'zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz');
+(1, 'produk.jpg', 'Dragon Roll', 'Maecenas, eget porttitor, leo sed'),
+(3, 'bg2.jpg', 'zzzzzz', 'zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz'),
+(4, '6665b1724a6a0.jpeg', 'Rifan Goreng Pedassss', 'Digoreng secara merata tanpa adanya intervensi dari rifans sendiri');
 
 --
 -- Indexes for dumped tables
@@ -60,7 +61,7 @@ ALTER TABLE `produk`
 -- AUTO_INCREMENT for table `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
