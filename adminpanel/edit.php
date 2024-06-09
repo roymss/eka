@@ -46,13 +46,14 @@ $produk = query("SELECT * FROM produk WHERE id = $id")[0];
                         EDIT Barang
                     </div>
                     <div class="card-body">
-                        <form action="" method="POST">
+                        <form action="" method="POST" enctype="multipart/form-data">
 
                             <input type="hidden" name="id" value="<?= $produk["id"]; ?>">
+                            <input type="hidden" name="gambarLama" value="<?= $produk["gambar"]; ?>">
 
                             <div class="form-group">
                                 <label>Gambar Barang</label>
-                                <input type="file" name="gambar" value="<?= $produk["gambar"]; ?>" placeholder="Masukkan gambar barang" class="form-control">
+                                <input type="file" name="gambar" class="form-control">
                             </div>
 
                             <div class="form-group">
@@ -75,8 +76,9 @@ $produk = query("SELECT * FROM produk WHERE id = $id")[0];
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
+
+

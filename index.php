@@ -4,10 +4,10 @@ require 'inc/function.php';
 
 $produk = query("SELECT * FROM produk");
 
-
-if(isset($_POST["cari"])){
+if (isset($_POST["cari"])) {
     $produk = cari($_POST["keyword"]);
 }
+
 
 
 

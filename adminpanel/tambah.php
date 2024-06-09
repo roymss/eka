@@ -44,11 +44,11 @@ if (isset($_POST["submit"])) {
                         TAMBAH DATA
                     </div>
                     <div class="card-body">
-                        <form action="" method="POST">
+                        <form action="" method="POST" enctype="multipart/form-data">
 
                             <div class="form-group">
                                 <label>Foto Barang</label>
-                                <input type="file" name="gambar" placeholder="Masukkan foto barang" class="form-control" required>
+                                <input type="file" name="gambar" class="form-control">
                             </div>
 
                             <div class="form-group">
